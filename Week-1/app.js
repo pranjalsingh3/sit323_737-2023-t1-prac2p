@@ -15,3 +15,6 @@ const port= 3040;
 app.listen(port, () =>{
     console.log("Hello I am listening to port:"+ port);
 });
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/simple.html');
+});
